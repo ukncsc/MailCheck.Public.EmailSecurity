@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="MailCheck.Common.Contracts" Version="12.0.0" />
+        <PackageReference Include="MailCheck.Common.Data" Version="12.0.0" />
+        <PackageReference Include="MailCheck.Common.Logging" Version="12.0.0" />
+        <PackageReference Include="MailCheck.Common.Util" Version="12.0.0" />
+        <PackageReference Include="MailCheck.Common.SSM" Version="12.0.0" />
+        <PackageReference Include="MailCheck.Common.Messaging" Version="12.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.HealthChecks" Version="1.0.0" />
+        <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.0" />
+        <PackageReference Include="Serilog" Version="2.10.0" />
+        <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+        <PackageReference Include="MailCheck.Common.Api" Version="12.0.0" />
+        <PackageReference Include="MongoDB.Bson" Version="2.12.2" />
+        <PackageReference Include="MongoDB.Driver" Version="2.12.2" />
+        <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.2" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.17" />
+        <PackageReference Include="System.Text.Encodings.Web" Version="4.5.1" />
+        <PackageReference Include="System.Private.Uri" Version="4.3.2" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+        <PackageReference Include="Microsoft.NETCore.App" Version="2.0.3" />
+    </ItemGroup>
+</Project>

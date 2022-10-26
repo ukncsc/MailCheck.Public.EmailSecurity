@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+        <AWSProjectType>Lambda</AWSProjectType>
+        <ApplicationIcon />
+        <OutputType>Exe</OutputType>
+        <StartupObject>MailCheck.EmailSecurity.Entity.LocalEntryPoint</StartupObject>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Amazon.Lambda.Core" Version="2.0.0" />
+        <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="2.0.0" />
+        <PackageReference Include="Dapper" Version="2.0.78" />
+        <PackageReference Include="Flurl.Http" Version="3.0.1" />
+        <PackageReference Include="MailCheck.Common.Contracts" Version="12.0.0" />
+        <PackageReference Include="MailCheck.Common.Messaging" Version="12.0.0" />
+        <PackageReference Include="MailCheck.Common.Api" Version="12.0.0" />
+        <PackageReference Include="MailCheck.Common.Util" Version="12.0.0" />
+        <PackageReference Include="MailCheck.Common.SSM" Version="12.0.0" />
+        <PackageReference Include="MailCheck.Common.Data" Version="12.0.0" />
+        <PackageReference Include="MailCheck.Common.Processors" Version="12.0.0" />
+        <PackageReference Include="MailCheck.DomainStatus.Contracts" Version="1.1.0" />
+        <PackageReference Include="Microsoft.Extensions.CommandLineUtils" Version="1.1.1" />
+        <PackageReference Include="MongoDB.Bson" Version="2.11.6" />
+        <PackageReference Include="MongoDB.Driver" Version="2.11.6" />
+        <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.2" />
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Update="Entity\EvaluationRules\RulesResources.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>RulesResources.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Update="Entity\EvaluationRules\RulesResources.Designer.cs">
+        <DependentUpon>RulesResources.resx</DependentUpon>
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+      </Compile>
+    </ItemGroup>
+</Project>
